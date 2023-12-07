@@ -10,6 +10,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background: linear-gradient(to bottom right, rgba(65, 131, 148, 0.589), #fff);
 }
 
@@ -34,6 +35,7 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
+    cursor: normal;
 }
 
 .L{
@@ -50,4 +52,34 @@ body{
 
 .B{
     border-bottom: none;
+}
+
+.info-game{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top:25px;
+    padding: 0px 20px;
+}
+.warning{
+    display: none;
+    background-color: rgba(33, 167, 201, 0.2);
+    border: 2px solid #444;
+    width: 250px;
+    height: 100px;
+}
+
+.reset{
+    display: none;
+}
+
+button{
+    width: 7rem;
+    box-sizing: border-box;
+    font-size: 2rem;
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
 }
